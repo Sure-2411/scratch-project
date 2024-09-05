@@ -1,0 +1,45 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+#Up-paw {
+    animation: move 2s infinite alternate
+  }
+  
+  #Tongue {
+    animation: slobber 2s infinite alternate
+  }
+  
+  #Tail {
+    animation: wag 2s infinite alternate
+  }
+  
+  @keyframes wag {
+  from { 
+    transform: 0
+    }
+  to { 
+    transform: translateX(14px)
+    } 
+  }
+  
+  @keyframes slobber {
+  from { 
+    transform: 0
+    }
+  to { 
+    transform: translateX(-6px)
+    } 
+  }
+    
+  @keyframes move {
+  from { 
+    transform: translateY(0)
+    }
+  to { 
+    transform: translateX(5px) translateY(-20px)
+    } 
+  }
